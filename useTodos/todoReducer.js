@@ -9,6 +9,7 @@ export const todoReducer = (initalState = [], action) => {
 
         case '[TODO] Toggle Todo':
             return initalState.map(todo => {
+
                 if (todo.id === action.payload) {
                     return {
                         ...todo,
